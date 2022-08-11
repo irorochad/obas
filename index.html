@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="../public/output.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <main class="flex flex-col w-4/5 mx-auto justify-center space-y-10 py-12 px-4 sm:px-0 lg:px-8 ">
+    <div class="border-2 border-sky-500 p-10">
+      <div class="text-left">
+        <h1 class="mt-6  text-3xl font-extrabold text-gray-900 dark:text-gray-100">Feedback Request </h1>
+        <p>Tell us you fee about the service/product received.</p>
+
+      </div>
+      <hr class="my-6 border-gray-200  sm:mx-auto lg:my-8">
+      <div class="lg:w-2/4 mx-auto items-center">
+        <video src="video.mp4" controls></video>
+
+       
+        <button type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5  mt-10 xl:ml-44 text-center inline-flex items-center ">
+          Record Video
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 -mr-1 w-5 h-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+        </button>
+      </div>
+      <form>
+        <div class=" mx-auto mt-10 space-y-6">
+
+          <div class="flex flex-col">
+            <label class="text-sm text-gray-600 mb-1" for="name">Full Name *</label>
+            <input class="border rounded-md bg-white dark:bg-slate-300 px-3 py-2" type="text" name="name" id="name"
+              required />
+          </div>
+          <div class="flex flex-col">
+            <label class="text-sm  text-gray-600 mb-1" for="org">Organization *</label>
+            <input class="border rounded-md bg-white dark:bg-slate-300 px-3 py-2" type="text" name="orgname" id="org"
+              required />
+          </div>
+          <div class="flex flex-col">
+            <label class="text-sm  text-gray-600 mb-1" for="subject">Subject *</label>
+            <input class="border rounded-md bg-white dark:bg-slate-300 px-3 py-2" type="subject" name="password"
+              id="subject" required />
+          </div>
+
+
+          <div class="grid grid-cols-5 md:gap-x-0 justify-start md:w-56">
+            <div class="flex items-center h-5 mr-4">
+              <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value=""
+                class="w-4 h-4 text-blue-600 bg-gray-100 rounded-l-full border-gray-300 ">
+
+              <label for="helper-checkbox" class="font-medium text-gray-700 ml-2 text-sm">1</label>
+            </div>
+
+            <div class="flex items-center h-5 mr-4">
+              <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value=""
+                class="w-4 h-4 text-blue-600 bg-gray-100 rounded-l-full border-gray-300 ">
+
+              <label for="helper-checkbox" class="font-medium text-gray-700 ml-2 text-sm">2</label>
+            </div>
+
+            <div class="flex items-center h-5 mr-4">
+              <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value=""
+                class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 ">
+
+              <label for="helper-checkbox" class="font-medium text-gray-700 ml-2 text-sm">3</label>
+            </div>
+            <div class="flex items-center h-5 mr-4">
+              <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value=""
+                class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 ">
+
+              <label for="helper-checkbox" class="font-medium text-gray-700 ml-2 text-sm">4</label>
+            </div>
+
+            <div class="flex items-center h-5 mr-4">
+              <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value=""
+                class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 ">
+
+              <label for="helper-checkbox" class="font-medium text-gray-700 ml-2 text-sm">5</label>
+            </div>
+
+          </div>
+          <label for="message" class="block mb-2 text-sm  text-gray-900 ">Your
+            Comment</label>
+          <textarea id="message" rows="4"
+            class="block p-2.5 w-full text-sm text-gray-900  rounded-lg border border-gray-300 focus:ring-blue-500 "
+            placeholder="Your message..."></textarea>
+
+          <label class="block mb-2 text-sm  text-gray-900 " for="default_size"> Upload
+            Profile Picture *</label>
+          <input class="block mb-5 w-full text-sm text-gray-900  border border-gray-300 cursor-pointer" type="file">
+        </div>
+
+        <div class="mt-10 xl:ml-96">
+          <button class="bg-indigo-600 text-white rounded-md p-2">Submit</button>
+        </div>
+    </div>
+    </div>
+    </form>
+  </main>
+</body>
+
+</html>
