@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-[#F5F7FC] h-fit lg:w-9/12 max-w-screen-2xl mx-auto px-5 lg:px-8 shadow-2xl">
+      <div
+        class="flex flex-col mx-auto justify-center space-y-10 py-12 md:px-4"
+      >
+        <div class="mx-auto">
+          <img
+            class="w-20 h-20 rounded-full"
+            src="logo.svg"
+            alt="Large avatar"
+          />
+        </div>
+        <div class="text-center">
+          <h1 class="text-blue-700 text-3xl font-extrabold ">
+            Your Feedback matters alot
+          </h1>
+          <p class="text-gray-900 font-normal">
+            Tell us how you feel about the service/product received.
+          </p>
+        </div>
+        <hr />
+        <!-- Start video -->
+        <div class="flex justify-center items-center md:w-1/2 mt-6 mx-auto">
+          <video src="video.mp4" controls></video>
+        </div>
+        <!-- ENd Video -->
+
+        <form class="">
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-first-name"
+              >
+                First Name *
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-first-name"
+                type="text"
+                placeholder="Jane"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-last-name"
+              >
+                Last Name
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-last-name"
+                type="text"
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="org-name"
+              >
+                Orgnization Name *
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="org-name"
+                type="text"
+                placeholder="my Orgnization"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="form_subject"
+              >
+                Subject *
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="form_subject"
+                type="text"
+                placeholder="Your services was amazing"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              >
+                Ratings
+              </label>
+              <div class="flex">
+                <div class="flex items-center mr-4">
+                  <input
+                    id="rating-1"
+                    type="radio"
+                    value=""
+                    name="inline-radio-group"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"
+                  />
+                  <label
+                    for="rating-1"
+                    class="ml-2 text-sm font-medium text-gray-900"
+                    >V. Bad</label
+                  >
+                </div>
+                <div class="flex items-center mr-4">
+                  <input
+                    id="rating-2"
+                    type="radio"
+                    value=""
+                    name="rating-2"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"
+                  />
+                  <label
+                    for="rating-2"
+                    class="ml-2 text-sm font-medium text-gray-900"
+                    >Bad</label
+                  >
+                </div>
+                <div class="flex items-center mr-4">
+                  <input
+                    checked=""
+                    id="rating-3"
+                    type="radio"
+                    value=""
+                    name="inline-radio-group"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"
+                  />
+                  <label
+                    for="rating-3"
+                    class="ml-2 text-sm font-medium text-gray-900"
+                    >Good</label
+                  >
+                </div>
+                <div class="flex items-center">
+                  <input
+                    id="rating-4"
+                    type="radio"
+                    value=""
+                    name="inline-radio-group"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"
+                  />
+                  <label
+                    for="rating-4"
+                    class="ml-2 text-sm font-medium text-gray-900"
+                    >V. Good</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label
+              for="message"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+              >Your message</label
+            >
+            <textarea
+              id="message"
+              rows="4"
+              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Your message..."
+            ></textarea>
+          </div>
+          <div class="mt-5 md:w-1/2 mx-auto">
+            <button type="button" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Submit Form</button>
+          </div>
+
+         
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
